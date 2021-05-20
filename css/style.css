@@ -1075,9 +1075,9 @@ transition: all 0.5s;
 .popup .form
 {
     background-color: #fff;
-    padding: 20px;
-    min-height: 350px;
-    width: 300px;
+    padding: 50px 20px;
+    min-height: 300px;
+    width: 270px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -1105,6 +1105,7 @@ transition: all 0.5s;
     color: var(--bg-color);
     font-weight: bold;
     font-size: 19px;
+    text-align: center;
 }
 .popup form input[type="file"]
 {
@@ -1123,6 +1124,24 @@ transition: all 0.5s;
 .popup form label i
 {
     margin-left: 10px;
+}
+.popup .form button
+{
+    margin-top: 40px;
+    margin-left: auto;
+    outline: none;
+    border : none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-family: 'Courgette', cursive;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.file-Name
+{
+    margin: 10px 0;
 }
 .closepopup
 {
