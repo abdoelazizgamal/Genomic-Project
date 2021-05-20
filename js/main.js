@@ -11,9 +11,9 @@ bars.addEventListener('click', () => {
 })
 
 window.addEventListener("load",()=>{
-  /*   setTimeout(()=>{
+    setTimeout(()=>{
         document.querySelector(".preloader").classList.add("hidden");
-    },2000) */
+    },2000)
     setTimeout(()=>{
         document.querySelector(".text").classList.add("open")
         document.querySelector(".dna").classList.add("open")   
