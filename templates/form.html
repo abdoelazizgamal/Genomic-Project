@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Python Flask File(s) Upload Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+{#	<h2>Python Flask File(s) Upload - Select file(s) to upload</h2>#}
+    <div class="form-area">
+        <div class="form-info-change">
+            <h2>Change Your Information</h2>
+{#            <input type="file" name="pic" id="pic" accept="image/*" >#}
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+{#            <input type="file" id="multiFiles" name="files[]" multiple="multiple"/>#}
+            <input type="file" id="multiFiles" name="files[]" />
+
+            <p class="err"></p>
+            <p id="msg"></p>
+{#            <button id="upload">Upload</button>#}
+            <input type="submit" value="Send" id="submitBtn">
+        </div>
+        <div class="info-from-form" id="infoFromForm">
+            <div class="name">
+                <p class="user-name" id="user-name">
+
+                </p>
+            </div>
+            <div class="name">
+                <p id="your-result">
+
+                </p>
+            </div>
+{#            <div class="img">#}
+{#                <img src="" class="userImage" alt="Your Image">#}
+{#            </div>#}
+            <button>Edit Info</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename='form.js') }}"></script>
+</body>
